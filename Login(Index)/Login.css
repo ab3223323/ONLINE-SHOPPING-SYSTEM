@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+    color: white;
+}
+
+body .title{
+    position: absolute;
+    z-index: 5;
+    width: 55%;
+    /* width: 50%; */
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+
+/*Welcome to*/
+body .title h1:first-child{
+    width: 100%;
+    font-size: 9vw;
+    text-align: start;
+    color: black;
+    /* background-color: #fff; */
+}
+
+/*web...*/
+body .title h1:last-child{
+    color: #444444;
+    text-align: start;
+    font-size: 7vw;
+}
+
+.login{
+    background: 
+    linear-gradient(110deg,#ffa69e 50%,transparent 50%) center center / 100% 100%,
+    url(blackman.png) right center / auto 100%;
+width: 100%;
+height: 100vh;
+position: relative;
+}
+
+.login .container{
+    /* background-color: blue; */
+    position: absolute;
+    right: 15vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .container .account,.passward,.btn,.help{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.login h2{
+    font-size: 4vw;
+    padding: 5px;
+}
+
+.login input[type = text],input[type=password]{
+    font-size: 1.2vw;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    width: 20vw;
+    height: 3vw;
+    padding-left: 5px;
+    border-radius: 12px;
+}
+
+.login input::placeholder{
+    color: white;
+    font-size: 1.2vw;
+}
+
+.login input:focus{
+    outline: none;
+}
+
+.login .container .btn{
+    height: 2vw;
+    width: 60px;
+    margin-top: 10px;
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    padding: 2px;
+    border: none;
+    margin-bottom: 10px;
+    color: black;
+    background: white;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.login .container .help{
+    font-size: 1.8vw;
+    display: flex;
+}
+
+.login .help .create{
+    margin-left: 5px;
+    color: blue;
+    text-decoration: underline;
+}
