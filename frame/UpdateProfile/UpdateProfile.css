@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+}
+
+.createAccount{
+    margin: auto;
+    width: 45%;
+    height: 130vh;
+    /* background-color: black; */
+}
+
+.createAccount .container{
+    height: 100%;
+    margin-right: 5vw;
+    position: relative;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: blanchedalmond; */
+}
+
+.createAccount .container .Name,.Street,.City,.State,.Zip,.Phone,.email,.password{
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+}
+
+.createAccount .container .Name,.Street,.City,.State,.Zip,.Phone,.email,.password input{
+    width: auto;
+}
+
+.createAccount .container .password{
+    width: auto;
+}
+
+.createAccount .container .Name{
+    
+}
+
+.createAccount .container .password{
+
+}
+
+.createAccount .container .email{
+
+}
+
+.createAccount input{
+    border: 5px solid #adb5bd;
+    width: 200px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.createAccount h3{
+    font-size: 3vw;
+    padding: 5px;
+}
+body .title{
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 1000;
+    font-size: 5vw;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    border-bottom: 5px #64757d solid;
+}
+
+.createAccount input:focus{
+    outline: none;
+}
+
+.createAccount .container .btn{
+    width: 30vw;
+    color: black;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 5vw;
+    background-color: #adb5bd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2.5vw;
+    font-weight: 1000;
+    cursor: pointer;
+}

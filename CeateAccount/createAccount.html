@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createAccount</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+
+    <main class="createAccount">
+        <form  class="container" action="createAccount.php" method="post"> 
+            <div class="title">
+                <h1>Web Shopping Application System </h1>
+                <h1>New Customer Sign-Up</h1>
+            </div>
+            <div class="wraper">
+                    <div class="Name">
+                    <h3>Name</h3>
+                    <input type="text" name="name" placeholder="please enter your Name">
+                </div>
+                <div class="Street">
+                    <h3>Street</h3>
+                    <input type="text" name="street" placeholder="please enter your Street">
+                </div>
+                <div class="City">
+                    <h3>City</h3>
+                    <input type="text" name="city" placeholder="please enter your City">
+                </div>
+                <div class="State">
+                    <h3>State</h3>
+                    <input type="text" name="state" placeholder="please enter your State">
+                </div>
+                <div class="Zip">
+                    <h3>Zip</h3>
+                    <input type="text" name="zip" oninput="value=value.replace(/[^\d]/g,'')" placeholder="please enter your Zip">
+                </div>
+                <div class="Phone">
+                    <h3>Phone</h3>
+                    <input type="text" name="phone" placeholder="please enter your Phone">
+                </div>
+                <div class="email">
+                    <h3>E-mail</h3>
+                    <input type="email" name="email" placeholder="please enter your email">
+                </div>
+                <div class="passward">
+                    <h3>Passward</h3>
+                    <input type="password" name="password" placeholder="please enter your password">
+                </div>
+            </div>
+            <!-- 不知道用php能否處理超連結按鈕...不能的話就改input button吧 -->
+            <!-- <input click= "history.back()" type="button" value="create Account" class="btn"> -->
+            <!-- <a href="../Login(Index)/Index.html" class="btn">Create Account</a> -->
+             <input class="btn" type="submit" value="Create Account"  name="create">
+        </form>
+    </main>
+</body>
+</html>

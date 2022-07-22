@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+}
+
+body .title{
+    font-weight: 1000;
+    font-size: 5vw;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    border-bottom: 5px rgb(3, 165, 165) solid;
+}
+
+.wrap{
+    height: 45vh;
+    position: relative;
+    margin: 1px;
+    border-bottom: 3px rgb(141, 236, 236) solid;
+}
+
+.wrap .information{
+    padding: 10px;
+    color: black;
+    font-size: 2.5vw;
+    position: absolute;
+    top: -5px;
+    left: 15vw;
+}
+
+.wrap .information .onoBox{
+    display: flex;
+}
+
+.wrap .information .AddrBox{
+    display: flex;
+}
+
+.wrap .container{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrap .container .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border:2px solid rgb(75, 212, 212);
+    height: 12vw;
+    width: 12vw;
+    background-color: #fff;
+    position: relative;
+}
+
+.wrap .item + .item{
+    margin-left: 10%;
+}
+
+.wrap .container .item + .item::before{
+    content: '';
+    position: absolute;
+    width: 20vw;
+    height: 2px;
+    left: -10vw;
+    background-color: rgb(75, 212, 212);
+    z-index: -1;
+}
+
+.wrap .item ion-icon{
+    font-size: 4vw;
+}
+
+.wrap .item .text{
+    font-size: 2.5vw;
+}
