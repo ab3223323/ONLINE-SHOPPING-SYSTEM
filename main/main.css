@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: #F08080;
+    width: 100%;
+    height: 9vw;
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:rgba(255, 0, 0, 0.459); */
+}
+
+header .container .titleBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .container .titleBox .title,.subtitle{
+    font-weight: 1000;
+    font-size: 2.7vw;
+}
+
+
+
+/* 設定sideBar */
+.navigation{
+    position: fixed;
+    top: 140px;
+    left: 20px;
+    bottom: 20px;
+    width: 20vw;
+    height: 77vh;
+    border-radius: 10px;
+    box-sizing: initial;
+    transition: 0.5s;
+    overflow-x: hidden;
+    /* 溢出就隱藏 */
+}
+
+.navigation .title{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.navigation #mainTitle{
+    font-weight: 1000;
+}
+
+.navigation .search .searchBox #SecondTitle{
+    font-weight: 1000;
+}
+
+/* 針對sideBar中的ul，ul包含各列表 */
+.navigation ul{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+/* 針對每個列表設定選取時反白*/
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 95%;
+    /* 讓所有列表之border變圓弧20px，但是只會有白色border會被看見 */
+    border-radius:30px;
+}
+
+.navigation ul li a #searchBox{
+    background-color: #fff;
+}
+
+/* li中有active就啟動 */
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2){
+    display: block;
+}
+
+/* 讓列表中有active class的背景變色 */
+.navigation ul li.active{
+    background-color: #FFDAB9;
+}
+
+/* 針對列表內的a設定 a包含icon跟title */
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+}
+
+/* 讓列表中有active class的icon和title變色 */
+.navigation ul li.active a{
+}
+
+/* icon位置 */
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 70px;
+    /*設定高度*/
+    line-height: 75px;
+    text-align: center;
+}
+
+/* icon本身 */
+.navigation ul li a .icon ion-icon{
+    font-size: 2em;
+}
+
+/* title */
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    font-size: 1.3vw;
+    line-height: 60px;/* 行高 */
+    white-space: normal; 
+}
+
+.navigation .search{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+}
+
+.navigation .search .searchBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.navigation .search .searchBox .title{
+    font-size: 2vw;
+}
+.navigation .search .searchBox .searchList{
+    width: 95%;
+    height: 3vw;
+    display: flex;
+}
+
+.navigation .search .searchBox .searchList input{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding-left: 10px;
+    border:5px solid #FFDAB9;
+}
+
+.navigation .search .searchBox .searchList input:focus{
+    outline: none;
+}
+
+/*mainFrame*/
+
+.mainFrame{
+    position: fixed;
+    width: 76%;
+    height: 80%;
+    margin-top: 40px;
+    right: 0;
+}
+
+.mainFrame iframe{
+    /* background-color: aqua; */
+}
