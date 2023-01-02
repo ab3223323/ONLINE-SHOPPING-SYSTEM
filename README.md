@@ -10,3 +10,4 @@ Update Profile：更新使用者資訊
 View/Edit Cart：查詢目前購物車資訊，並且提供使用者更改  
 Logout：有三個選項直接登出、保存購物車資料登出、送出訂單  
 ![image](https://user-images.githubusercontent.com/80948966/210208566-c418256f-111a-478d-badc-65d3f96bf9fd.png)
+![image](https://user-images.githubusercontent.com/80948966/210208610-5e0657b4-9bed-4e4a-9208-95a6a4c07e79.png)
